@@ -1,0 +1,631 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+.logo {
+    width: 450px; /* Atur lebar gambar sesuai keinginan */
+    height: auto; /* Menjaga rasio aspek gambar agar tetap proporsional */
+}
+
+.header {
+    background-color: #3C1C7C;
+    text-align: center;
+    padding: 20px 10px;
+    color: white;
+}
+
+.header h1 {
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.header strong {
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #ffffff;
+}
+
+.text-content {
+    max-width: 500px;
+}
+
+.text-content h2 {
+    color: #5c5c5c;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.text-content h3 {
+    color: #3C1C7C;
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+
+.text-content p {
+    color: #6c757d;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.salary {
+    color: #D61355;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.whatsapp-button {
+    background-color: #FF3E7F; /* Warna tombol */
+    color: rgb(0, 0, 0); /* Warna teks */
+    border: none; /* Hilangkan border */
+    padding: 8px 20px; /* Padding sedang untuk tombol */
+    font-size: 20px; /* Ukuran teks sedang */
+    border-radius: 10px; /* Bentuk lonjong yang sederhana */
+    cursor: pointer; /* Kursor saat diarahkan */
+    display: inline-flex; /* Gunakan inline-flex untuk membuat elemen baris */
+    align-items: center; /* Rata tengah vertikal */
+    justify-content: center; /* Rata tengah horizontal */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); /* Bayangan lebih kecil */
+    transition: all 0.3s ease; /* Efek transisi */
+}
+
+.whatsapp-button img {
+    width: 40px; /* Ukuran ikon WhatsApp lebih besar */
+    height: auto; /* Menjaga proporsi ikon */
+    margin-right: 10px; /* Jarak antara ikon dan teks */
+    vertical-align: middle; /* Menjaga ikon sejajar dengan teks */
+}
+
+.whatsapp-button:hover {
+    background-color: #E3326E; /* Warna tombol saat dihover */
+    transform: scale(1.05); /* Membesarkan tombol sedikit saat dihover */
+}
+
+.image-content img {
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Warna background bisa disesuaikan */
+}
+
+.contact-button {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #483eff; /* Warna pink seperti di gambar */
+    padding: 10px 30px;
+    border-radius: 50px; /* Membuat tombol lonjong */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Menambahkan efek bayangan */
+    text-align: center;
+
+}
+.requirements-right .item .icon {
+    width: 50px; /* Ukuran gambar */
+    height: 50px; /* Ukuran gambar */
+    display: flex;
+    justify-content: center; /* Menyusun gambar di tengah */
+    align-items: center; /* Menyusun gambar di tengah */
+}
+
+.requirements-right .item .icon img {
+    width: 100%; /* Menyesuaikan gambar agar pas dalam elemen */
+    height: 100%; /* Menyesuaikan gambar agar pas dalam elemen */
+    object-fit: cover; /* Menjaga rasio gambar dan memotong bagian yang tidak pas */
+}
+
+/* Tombol WhatsApp di pojok kanan bawah */
+.floating-wa {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
+}
+
+.floating-wa:hover {
+    transform: scale(1.1);
+}
+
+.floating-wa img {
+    width: 35px;
+    height: 35px;
+}
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Section Container */
+.requirements {
+    background-color: #240E7E; /* Warna latar belakang */
+    color: white;
+    padding: 50px 0;
+}
+
+.requirements-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Bagian Kiri */
+.requirements-left {
+    flex: 1;
+    position: relative;
+    padding: 20px;
+}
+
+.requirements-left h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.requirements-left .bold {
+    font-weight: bold;
+}
+
+.circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: repeating-linear-gradient(45deg, transparent, transparent 10px, #fff 10px, #fff 20px);
+    border-radius: 50%;
+    top: 20%;
+    left: 10%;
+    z-index: -1;
+}
+
+.working-image {
+    max-width: 400px;
+    margin-top: 30px;
+}
+
+/* Bagian Kanan */
+.requirements-right {
+    flex: 1;
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.icon i {
+    color: white;
+    font-size: 24px;
+}
+
+.text h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.text p {
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+/* CTA Button */
+.cta-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.whatsapp-button {
+    display: inline-flex;
+    align-items: center;
+    background-color: #FF3E7F;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-button i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .requirements-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .working-image {
+        margin-top: 0;
+    }
+
+    .item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon {
+        margin: 0 auto 10px;
+    }
+    
+}
+/* Styling khusus hanya untuk bagian 'proses-pekerjaan' */
+.proses-pekerjaan {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 50px auto;
+}
+
+.judul-proses {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.langkah-sederhana {
+    font-size: 30px;
+    color: #2e2a72;
+    margin-bottom: 30px;
+}
+
+.proses-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.proses-item {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.proses-gambar img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.proses-item h3 {
+    font-size: 18px;
+    color: #000;
+    margin: 15px 0 10px;
+    font-weight: bold;
+}
+
+.proses-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Media Query untuk layar kecil */
+@media (max-width: 768px) {
+    .proses-container {
+        flex-direction: column;
+    }
+}
+.tombol-bergabung {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #2e2a72;
+    border: 2px solid #2e2a72;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.tombol-bergabung:hover {
+    background-color: #2e2a72;
+    color: #fff;
+}
+
+/* Media Query untuk layar kecil */
+@media (max-width: 768px) {
+    .proses-container {
+        flex-direction: column;
+    }
+}
+/* Font Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arial:wght@700&display=swap');
+
+/* Reset Default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero-section {
+    margin: 0; /* Hilangkan margin */
+    padding: 0; /* Hilangkan padding */
+    width: 100%; /* Lebar penuh */
+    height: auto; /* Sesuai dengan ukuran gambar */
+    display: block; /* Agar tidak ada elemen lain mengganggu */
+}
+
+.hero-section img {
+    width: 100%; /* Lebar penuh layar */
+    height: auto; /* Menjaga rasio aspek gambar */
+    display: block; /* Hilangkan ruang bawah gambar */
+    object-fit: contain; /* Menyesuaikan gambar tanpa terpotong */
+}
+
+
+.hero-full-image {
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    object-fit: cover; /* Gambar menyesuaikan area tanpa distorsi */
+    display: block; /* Hilangkan ruang ekstra di bawah gambar */
+}
+
+/* Gambar */
+.hero-image img {
+    height: 400px;
+    width: auto;
+}
+
+/* Call To Action Section */
+.call-to-action {
+    text-align: center;
+    margin-top: 40px;
+    color: #333333; /* Warna teks abu */
+    font-family: Arial, sans-serif;
+}
+
+.call-to-action-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.call-to-action-subtitle {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.call-to-action-subtitle .highlight {
+    color: #2e2a72; /* Warna biru gelap */
+    font-weight: bold;
+}
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Container Styling */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #555;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 2rem;
+    color: #220877;
+    margin: 10px 0 20px 0;
+}
+
+/* Cards Layout */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* Card Colors */
+.card.simple {
+    background-color: #0d57a1;
+}
+
+.card.income {
+    background-color: #00688B;
+}
+
+.card.comfort {
+    background-color: #2c0083;
+}
+
+/* Card Text */
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+/* WhatsApp Button */
+.cta-button {
+    margin-top: 20px;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background: linear-gradient(45deg, #f72585, #ee6a85);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.whatsapp-button:hover {
+    opacity: 0.9;
+    transition: 0.3s ease;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer Styles */
+.footer {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.footer-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Left Section: Logo dan Teks */
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.footer-text {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.footer-text strong {
+    color: #560bad;
+}
+
+/* Center Section: WhatsApp Button */
+.footer-center {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.whatsapp-btn {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(90deg, #f72585, #b5179e, #7209b7);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.whatsapp-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Right Section: Hak Cipta */
+.footer-right {
+    text-align: right;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.floating-whatsapp img {
+    height: 40px;
+    margin-top: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.floating-whatsapp img:hover {
+    transform: scale(1.1);
+}
