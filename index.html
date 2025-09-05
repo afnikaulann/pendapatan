@@ -178,30 +178,39 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16
 					<img class="logo" src="img/LOGO ALV.png" alt="ALVEA Logo">
 
 <style>
-  .header-brand {
-    position: absolute;
-    top: 0;     /* tempel ke atas */
-    left: 0;    /* tempel ke kiri */
-    display: flex;
-    align-items: center;
-    gap: 10px; /* jarak antara logo dan teks */
-  }
+ .header-brand {
+  position: absolute;
+  top: 0;     /* naik ke atas */
+  left: 0;    /* tempel ke kiri */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* jarak antara logo dan teks */
+  padding: 5px; /* opsional, biar tidak terlalu mepet ke tepi */
+}
 
-  .logo {
-    width: 100px;   /* ukuran logo */
-    height: auto;
-  }
+.logo {
+  width: 90px;   /* bisa sesuaikan */
+  height: auto;
+  margin-top: 0; /* pastikan tidak ada jarak atas */
+}
 
-  .brand-text {
-    font-size: 28px;     /* besar teks */
-    font-weight: bold;   /* tebal */
-    color: white;        /* bisa diganti sesuai background */
-    margin: 0;
-  }
+.navbar {
+  margin-left: 150px; /* geser menu ke kanan biar tidak nempel logo */
+}
 
-  .brand-text span {
-    font-style: italic;  /* FASHION AGENCY miring */
-  }
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px; /* jarak antar menu */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
 </style>
 
 				  
